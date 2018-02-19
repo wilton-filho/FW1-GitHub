@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <style>
+            body {
+                font-size: 14px;
+                margin:0px 110px;
+                background: url('imagens/left_side.gif') repeat-y left, url('imagens/right_side.gif') repeat-y right;
+                min-width: 600px;
+                font-family: verdana;
+            }
+            .bordaBox {
+                border-top:1px solid rgb(255, 71, 0);
+            }
+            #header p {
+                background-color:#265057;
+                font-size:1.1em;
+                letter-spacing:5px;
+                color:white;
+                text-align:right;
+                padding:10px;
+                margin:0;
+            }
+            #boxImgEmpresa {
+                background-color:#336a74;
+                text-align:center;
+                margin:0;
+            }
+            #nav {
+                background-color:#265057;
+                padding:10px;
+            }
+            #nav ul {
+                list-style: none;
+                margin:0;
+                padding:0;
+                text-align: center;
+            }
+            #nav ul a {
+                color:white;
+                text-decoration:none;
+                font-size: 0.8em;
+                margin-right: 20px;
+            }
+            #nav ul a:hover {
+                color:rgb(255, 71, 0);
+                text-decoration: underline;
+            }
+            #nav ul li {
+                display: inline;
+                margin:0px 10px;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Cabecalho da página ------------------------------------>
+        <div id="header">
+            <!-- Nome da empresa ------------------------------------>
+            <p class="bordaBox">
+                Sistemas para Internet
+            </p>
+            <!-- Foto da fachada da empresa ------------------------->
+            <div id="boxImgEmpresa" class="bordaBox">
+                <img src="imagens/header_image.jpg" alt="Foto da entrada da empresa XXX" width="574" height="177">
+            </div>
+        </div>
+        
+        <!-- Menu de navegação da página ----------------------------->
+        <div id="nav" class="bordaBox">
+            <ul>
+                <li><a href="#">Início</a>||</li>
+                <li><a href="#">Disciplinas</a>||</li>
+                <li><a href="#">Professores</a>||</li>
+                <li><a href="#">Alunos</a>||</li>
+                <li><a href="#">MEC</a>||</li>
+                <li><a href="#">Instituto</a>||</li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+        <div class="bordaBox">
+            Conteúdo
+        </div>
+        <div class="bordaBox">
+            Rodapé
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,141 @@
+/* 
+ * Responsavel: Wilton de Paula Filho
+ * Data: 10/05/10
+ */
+
+html {
+	background-image: url(imagens/left_side.gif);
+	background-repeat: repeat-y;
+	background-position: left;
+}
+
+body {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size:small;
+	margin: 0px;
+	color: white;
+	background-image: url(imagens/right_side.gif);
+	background-repeat: repeat-y;
+	background-position: right;
+	
+}
+
+/* Estilo comum as varias secoes */
+.margem {
+	margin: 0px 110px 0px 110px;
+	border: 1px solid rgb(255, 71, 0);
+	border-left:none;
+	border-right:none;
+	text-align:center;
+	padding:10px;
+}
+
+/* Seção contendo as configurações onde será colocado o nome da empresa */
+#secao_nomeEmpresa {
+	background-color: #265057;
+	text-align: right;
+	font-size: 1.1em;
+	letter-spacing: 0.5em;
+}
+
+/* Secao contendo as configurações onde será colocada uma imagem representando a empresa*/
+#secao_imagemEmpresa {
+	background-color: #336a74;
+	padding:0px;
+}
+
+/* Secao contendo o menu de navegacao do site*/
+#secao_menuNavegacao {
+	background-color: #265057;
+	font-weight: bold;
+	font-size:0.7em;
+	word-spacing: 8px;
+	letter-spacing:0.1em;
+}
+
+/* Definicao do estilo para os links contidos no menu de navegacao */
+#secao_menuNavegacao a:link{
+	color:white;
+	text-decoration: none;
+}
+
+#secao_menuNavegacao a:visited {
+	color:white;
+	text-decoration: none;
+}
+
+#secao_menuNavegacao a:hover {
+	color: rgb(255, 71, 0);
+	text-decoration:underline;
+}
+
+/* Secao contendo as configurações onde será colocado o texto da pagina*/
+#secao_informacoes {
+	background-color: #e1ecee;
+	padding-left:40px;
+	padding-right:40px;
+}
+
+#secao_informacoes a:link, a:visited {
+	color: #f97000;
+	text-decoration:none;
+	font-weight: bold;
+	font-size:10px;
+}
+
+#secao_informacoes a:visited {
+	color: #f97000;
+	text-decoration:none;
+	font-weight: bold;
+	font-size:10px;
+}
+
+#secao_informacoes a:hover {
+	text-decoration:underline;
+	font-weight: bold;
+}
+
+/* Secao contendo as configurações do rodape*/
+#secao_rodape{
+	background-color: #f97000;
+	font-size:0.7em;
+}
+
+h1 {
+	font-size: 1.4em;
+	font-weight: lighter;
+	letter-spacing: 0.3em;
+	color: #265057;
+	text-align: left;
+	border-bottom: 1px rgb(255, 71, 0) solid;
+}
+
+p {
+	text-align:justify;
+	color: black;
+	line-height: 2em;
+	font-size:0.8em;
+	padding-bottom:20px;
+}
+
+p a:link{
+	color: #f97000;
+	text-decoration:none;
+	font-weight: bold;
+	font-size:10px;
+}
+
+p a:visited {
+	color: #f97000;
+	text-decoration:none;
+	font-weight: bold;
+	font-size:10px;
+}
+
+
+/* Estilo para os links gerais da pagina. Ao passar o mouse sobre o link*/
+
+p a:hover {
+	text-decoration:underline;
+	font-weight: bold;
+}

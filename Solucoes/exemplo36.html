@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                background-image: url('imagens/fundoPagina.png');
+            }
+            #linha2 {
+                background-color: white;
+                border-radius: 5px;
+                overflow: auto;
+                clear:both;
+            }
+            .intro {
+                float:left;
+                width:50%;
+            }
+            .carro {
+                float:left;
+                width: 20%;
+            }
+            .carro img {
+                border:1px solid gray;
+                padding:5px;
+                border-radius: 5px;
+                width:160px;
+            }
+            .info {
+                float:left;
+                width:33%;
+            }
+            #container {
+                width:1000px;
+                margin:auto;
+                                box-shadow: 2px 2px 5px 2px gray;
+
+            }
+            #linha1 {
+                padding:10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id ="container">
+            <!-- Linha 2: Todo o conteudo da página ------------------------------->
+            <div id="linha2">
+                <!-- Linha 2.1: Apresentacao da pagina (carro + txt apresentacao -->
+                <div id="linha1">
+                    <div class="intro">
+                        <img src="imagens/carro1.jpg" alt="">
+                    </div>
+                    <div class="intro">
+                        <h1>Bem-vindo ao mundo dos carros clássicos</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, dicta, ducimus nemo quis sit numquam nobis asperiores odio iure quia eaque velit unde recusandae at placeat magni veniam reiciendis illo.</p>
+                    </div>
+                </div>
+
+                <!-- Linha 2.2: Painel de carros ---------------------------------->
+                <div id="linha2">
+                    <div class="carro">
+                        <img src="imagens/carro1.jpg" alt="Carro1">
+                        <h4>Carro antigo1</h4>
+                        <p>texto1</p>
+                    </div>
+                    <div class="carro">
+                        <img src="imagens/carro2.jpg" alt="Carro2">
+                        <h4>Carro antigo2</h4>
+                        <p>texto2</p>
+                    </div>
+                    <div class="carro">
+                        <img src="imagens/carro3.jpg" alt="Carro3">
+                        <h4>Carro antigo3</h4>
+                        <p>texto3</p>
+                    </div>
+                    <div class="carro">
+                        <img src="imagens/carro4.jpg" alt="Carro4">
+                        <h4>Carro antigo4</h4>
+                        <p>texto4</p>
+                    </div>
+                    <div class="carro">
+                        <img src="imagens/carro5.jpg" alt="Carro5">
+                        <h4>Carro antigo5</h4>
+                        <p>texto5</p>
+                    </div>
+                </div>
+
+                <!-- Linha 2.3: Informacoes (amigo, clube e manutencao------------->
+                <div id="linha3">
+                    <div class="info">
+                        <h2>Encontre um carro antigo</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, laudantium, molestias, cum, nostrum obcaecati recusandae repellat odit ducimus vel nihil ab ipsa impedit suscipit numquam quidem voluptate a architecto enim.</p>
+                    </div>
+                    <div class="info">
+                        <h2>Entre para o clube</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, laudantium, molestias, cum, nostrum obcaecati recusandae repellat odit ducimus vel nihil ab ipsa impedit suscipit numquam quidem voluptate a architecto enim.</p>
+                    </div>
+                    <div class="info">
+                        <h2>Manutenção</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, laudantium, molestias, cum, nostrum obcaecati recusandae repellat odit ducimus vel nihil ab ipsa impedit suscipit numquam quidem voluptate a architecto enim.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </body>
+</html>

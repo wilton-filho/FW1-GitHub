@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <script>
+            var tamanhoFonteBody = 23;
+            function alterarTam(tipo) {
+                if (tipo == '+') tamanhoFonteBody += 3;
+                else tamanhoFonteBody -= 3;
+                
+                document.getElementsByTagName("body")[0].style.fontSize = tamanhoFonteBody + "px";
+            }
+        </script>
+        <style>
+            body {
+                font-size: 23px;    
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            p {
+               font-size: 1em;
+               font-weight: bold;
+               font-style: italic;
+            }
+            input[type="button"] {
+                width: 50px;
+                background-color: blue;
+                color:white;
+                padding: 5px;
+                text-align: center;
+                border-radius: 5px;
+                border:0px;
+                
+            }
+            input[type="button"]:hover {
+                box-shadow: 3px 3px 3px gray;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="button" value="A+" onclick="alterarTam('+')">
+        <input type="button" value="A-" onclick="alterarTam('-')">
+        <h1>1. Introdução</h1>
+        <p> 
+            Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho 
+        </p>
+        <h2>1.1. Justificativa </h2>
+        <p> 
+            Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho Wilton Filho 
+        </p>
+    </body>
+</html>

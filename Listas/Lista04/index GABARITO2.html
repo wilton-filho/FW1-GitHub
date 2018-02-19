@@ -1,0 +1,70 @@
+<!-- Erro 1: ausência do DOCTYPE -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html>
+<head>
+<!-- ERRO 2: Ausência da tag title -->
+<title>Título</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+	<!-- Erro 3: Presença da tag em desuso center -->
+	<div style="text-align:center">
+	wilton
+		<h1 style="text-align:center">Curriculum Vitae</h1>
+		<!-- Erro 4: Ausência do atributo ALT -->
+		<img src="santos.png" alt="Imagem do rosto de Santos Dummont">
+	</div>
+	
+	<!-- Erro 5: Presença da tag em desuso font -->
+	<!-- <font color="red" size="5"> Dados pessoais </font> -->
+	<p style="color:red; font-size:20px"> Dados pessoais </p>
+	<!-- Erro 6: Presença do atributo noshade -->
+	<!-- <hr noshade="noshade"> -->
+	<hr>
+		<!-- Erro 7: Presença do atributo em desuso em tabela border -->
+		<!--<table border="1">-->
+		<table style="border:1px solid black">
+		  <tr>
+			 <td>Nome:</td>
+			 <td>Santos Dumont</td>
+		  </tr>
+		  <tr>
+			 <td>Endereço:</td>
+			 <td>Rua: xxxxxxx</td>
+		  </tr>
+		  <tr>
+			 <td>Telefone:</td>
+			 <td>(xx)xxxx-xxxxx</td>
+		  </tr>
+		  <tr>
+			 <td>Estado:</td>
+			 <td>Minas Gerais</td>
+		  </tr>
+		</table>
+
+	<!-- Erro 8: Ausência de tag de bloco dentro de blockquote -->
+	<blockquote><p>Santos Dumont foi inventor de vários elementos:</p></blockquote>
+	
+	<!-- Erro 9: Ausência da tag ul -->
+	<ul>
+	  <li><b>Relógio de pulso</b></li>
+	  <li><b>Dirigível</b></li>
+	  <li><b>Hangar</b></li>
+	</ul>
+	
+	<!-- Erro 10: Tag center em desuso -->
+	<!--<center>-->
+		<!-- Erro 11: Marquee esta em desuso -->
+		<!--<marquee width="30%" behavior="alternate">-->
+			<p style="text-align:center">
+				<!-- Erro 12: Ordem de fechamento trocada entre os elementos b e u -->
+				<!--Desenvolvido por <em>Wilton de Paula Filho</em><b><u>Todos os direitos reservados</b></u>-->
+				Desenvolvido por <em>Wilton de Paula Filho</em><b><span style="text-decoration:underline">Todos os direitos reservados</span></b>
+			</p>
+		<!--</marquee>-->
+	<!--</center>-->
+
+</body>
+</html>
+

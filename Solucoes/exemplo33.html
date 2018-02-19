@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <script>
+            QTD_QUESTOES = 3;
+            /*function conferirQuestoes() {
+                var qtdAlternativas, i, totalChecked = 0;
+                qtdAlternativas = document.getElementsByName("questao1").length;
+                for (i=0; i<qtdAlternativas; i++) {
+                    if (document.getElementsByName("questao1")[i].checked) {
+                        alert("Opcao selecionada = "+(i+1));
+                    }
+                    else totalChecked++;
+                }
+                if (totalChecked == qtdAlternativas)
+                    alert("Você deve selecionar uma opção da questão 1");
+            }*/
+    function conferirQuestoes() {
+        var qtdAlternativas, a, q;
+        var vetAlternativas = new Array();
+
+        for (q=0; q<QTD_QUESTOES; q++) {
+            qtdAlternativas = document.getElementsByName("questao"+(q+1)).length;
+            for (a=0; a<qtdAlternativas; a++)
+                if (document.getElementsByName("questao"+(q+1))[a].checked)
+                    //Vetor contendo todas as alternativas selecionadas pelo user
+                     vetAlternativas[q] = document.getElementsByName("questao"+(q+1))[a].value;
+        }
+        // Armazenando na seção do navegador o vetor contendo as alternativas selecionadas pelo user.
+        sessionStorage.alternativas = vetAlternativas;
+        window.open("exemplo34.html","_self");
+    }
+        </script>
+        <style>
+            ul {
+                list-style: none;
+                margin-left:20px;
+                padding:0;
+            }
+        </style>
+    </head>
+    <body>
+<form action="">
+    <p>1) Texto da primeira pergunta</p>
+    <ul>
+        <li><label><input type="radio" name="questao1" value="a">Resposta 1</label></li>
+        <li><label><input type="radio" name="questao1" value="b">Resposta 2</label></li>
+        <li><label><input type="radio" name="questao1" value="c">Resposta 3</label></li>
+        <li><label><input type="radio" name="questao1" value="d">Resposta 4</label></li>
+    </ul>
+    
+    <p>2) Texto da segunda pergunta</p>
+    <ul>
+        <li><label><input type="radio" name="questao2" value="a">Resposta 1</label></li>
+        <li><label><input type="radio" name="questao2" value="b">Resposta 2</label></li>
+        <li><label><input type="radio" name="questao2" value="c">Resposta 3</label></li>
+        <li><label><input type="radio" name="questao2" value="d">Resposta 4</label></li>
+    </ul>
+    
+    <p>3) Texto da terceira pergunta</p>
+    <ul>
+        <li><label><input type="radio" name="questao3" value="a">Resposta 1</label></li>
+        <li><label><input type="radio" name="questao3" value="b">Resposta 2</label></li>
+        <li><label><input type="radio" name="questao3" value="c">Resposta 3</label></li>
+        <li><label><input type="radio" name="questao3" value="d">Resposta 4</label></li>
+    </ul>
+
+    <input type="button" value="Conferir" onclick="conferirQuestoes();">
+</form>
+    </body>
+</html>

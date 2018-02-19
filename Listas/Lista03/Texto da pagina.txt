@@ -1,0 +1,11 @@
+Curso Superior de Tecnologia em Sistemas para Internet
+
+O Tecnólogo em Sistemas para Internet ocupa-se do desenvolvimento de programas, de interfaces e aplicativos, do comércio e do marketing eletrônicos, além de sítios e portais para internet e intranet. Esse profissional gerencia projetos de sistemas, inclusive com acesso a banco de dados, desenvolvendo projetos de aplicações para a rede mundial de computadores e integra mídias nos sítios da internet. Este profissional atua com tecnologias emergentes como computação móvel, redes sem fio e sistemas distribuídos. Cuidar da implantação, atualização, manutenção e segurança dos sistemas para internet também são suas atribuições.
+
+Carga horária mínima:
+
+    2.000 horas
+
+Infra-estrutura recomendada:
+
+Biblioteca incluindo acervo específico e atualizado Laboratório de arquitetura de computadores Laboratório de informática com programas específicos e conectados a internet Laboratório de redes de computadores 

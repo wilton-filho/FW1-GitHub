@@ -1,0 +1,33 @@
+.caixa1 {
+                background-color: pink;
+                border: black 5px solid;
+                padding: 10px 100px;
+                width:600px;
+                margin:auto;
+                
+}
+.caixa2 {
+    width:100px;
+    color:white;   
+    padding:10px;
+    text-align: center;
+    font-size:20px;
+    margin-left:-110px;
+    transition: all 0.5s;
+}
+.corMenu1  {
+    background-color: yellow;
+    color:black;
+}
+.corMenu2 {
+    background-color: pink;
+}
+.corMenu3 {
+    background-color: green;
+}
+.caixa2:hover {
+    margin-left:0px;
+}
+body {
+    margin:0px;
+}

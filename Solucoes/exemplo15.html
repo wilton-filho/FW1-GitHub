@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menu</title>
+        <meta charset="UTF-8">
+        <style>
+            ul {
+                list-style: none;
+                background-color:#666666;
+                padding:0;
+                margin:0;
+                overflow: auto;    
+                
+            }
+            @media screen and (max-width: 700px) {
+                li.esquerda {
+                    float:left;
+                    width:100%;
+                }    
+                li.direita {
+                    float:right;
+                    width:100%;    
+                }
+            }
+            @media screen and (min-width: 700px) {
+                li.esquerda {
+                    float:left;
+                    width:100px;
+                }  
+                li.direita {
+                    float:right;
+                    width:100px;    
+                }
+            }
+            
+            a {
+                text-decoration: none;
+                color:white;
+                display:block;
+                text-align: center;
+                padding:5px;
+                padding-top:35px;
+                font-family: tahoma;
+                font-size: 13px;
+            }
+            a.opcao1menu {
+                background: url('icones/icone1_b.png') center 5px no-repeat ;    
+            }
+            a.opcao1menu:hover {
+                background: url('icones/icone1_a.png') center 5px no-repeat;
+            }
+            a.opcao2menu {
+                background: url('icones/icone2_b.png') center 5px no-repeat;    
+            }
+            a.opcao2menu:hover {
+                background: url('icones/icone2_a.png') center 5px no-repeat;
+            }
+            a.opcao3menu {
+                background: url('icones/icone3_b.png') center 5px no-repeat;    
+            }
+            a.opcao3menu:hover {
+                background: url('icones/icone3_a.png') center 5px no-repeat;
+            }
+            a.opcao4menu {
+                background: url('icones/icone4_b.png') center 5px no-repeat;    
+            }
+            a.opcao4menu:hover {
+                background: url('icones/icone4_a.png') center 5px no-repeat;
+            }
+            a.opcao5menu {
+                background: url('icones/icone5_b.png') center 5px no-repeat;    
+            }
+            a.opcao5menu:hover {
+                background: url('icones/icone5_a.png') center 5px no-repeat;
+            }
+            a.opcao6menu {
+                background: url('icones/icone6_b.png') center 5px no-repeat;    
+            }
+            a.opcao6menu:hover {
+                background: url('icones/icone6_a.png') center 5px no-repeat;
+            }
+            a.opcao7menu {
+                background: url('icones/icone7_b.png') center 5px no-repeat;    
+            }
+            a.opcao7menu:hover {
+                background: url('icones/icone7_a.png') center 5px no-repeat;
+            }
+            a:hover:not(.ativa) {
+                background-color: black;
+                color:white;
+            }
+            .ativa {
+                background-color: green;
+                color:white;
+            }
+            body {
+                margin:0;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li class="esquerda"><a href="#" class="opcao1menu">Ember</a></li>
+            <li class="esquerda"><a href="exemplo11.html" class="opcao2menu">Dopplr</a></li>
+            <li class="esquerda"><a href="exemplo12.html" class="opcao3menu">Tripadvisor</a></li>
+            <li class="esquerda"><a href="exemplo13.html" class="opcao4menu">Myspace</a></li>
+            <li class="esquerda"><a href="exemplo14.html" class="opcao5menu">Google</a></li>
+            <li class="direita"><a href="exemplo14.html" class="opcao6menu">Gmail</a></li>
+            <li class="direita"><a href="exemplo14.html" class="opcao7menu">Youtube</a></li>
+        </ul>
+    </body>
+</html>

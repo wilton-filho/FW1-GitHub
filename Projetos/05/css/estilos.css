@@ -1,0 +1,37 @@
+body {
+	margin:0;
+}
+header {
+	background-color:black;
+	color:white;
+	text-align:center;
+	padding:5px;	 
+}
+nav {
+	line-height:30px;
+	background-color:#eeeeee;
+	width:100px;
+	float:left;
+	padding:5px;	      
+}
+section.publicidade {
+	float:right;
+	width:100px;
+	padding:5px;
+	background-color:green;
+	color:white;
+	text-align:center;
+	line-height:30px;
+}
+section.conteudo {
+	margin-left:100px;
+	margin-right:100px;
+	padding:10px;	 	 
+}
+footer {
+	background-color:black;
+	color:white;
+	clear:both;
+	text-align:center;
+	padding:5px;	 	 
+}
