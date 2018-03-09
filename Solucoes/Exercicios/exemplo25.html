@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <style type="text/css">
+      input.text:focus {
+        background-color: #7FFF00; 
+        color: #000;
+      }
+      input[type=checkbox]:focus + label, input[type=radio]:focus + label {
+        background-color: #FF6; 
+        color: #000; 
+      }
+      #mainnav a:hover, #mainnav a:active, #mainnav a:focus {
+  background-color: #DCFFFF;
+  color:#000066;
+}
+    </style>
+  </head>
+  <body>
+    <form method="post" action="form.php">
+      <p><label for="fname">Name: </label>
+        <input class="text" type="text" name="fname" id="fname" />
+      </p>
+      <p>
+        <input type="radio" name="sex" value="male" id="sm" /> <label for="sm">Male</label><br />
+        <input type="radio" name="sex" value="female" id="sf" /> <label for="sf">Female</label>
+      <p>
+    </form>
+      
+      <ul id="mainnav">
+  <li class="page_item">Home</li>
+  <li class="page_item"><a href="/services">Services</a></li>
+  <li class="page_item"><a href="/projects">Projects</a></li>
+  <li class="page_item"><a href="/demos">Demos</a></li>
+  <li class="page_item"><a href="/about-us">About us</a></li>
+  <li class="page_item"><a href="/contact-us">Contact us</a></li>
+  <li class="page_item"><a href="/links">Links</a></li>
+</ul>
+      
+      
+  </body>
+</html>

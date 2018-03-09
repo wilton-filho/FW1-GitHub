@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .invisivel {
+                display:none;
+            }
+            .visivel {
+                display:block;
+            }
+        </style>
+        <script>
+            var g_gabarito = ['a','b','c','d'];
+            function lerDados() {
+                if (typeof(sessionStorage.vetorRespostas) === "undefined") {
+                    alert("Erro: Você deverá responder as questões!");
+                }
+                else {
+                    calcularPontuacao(sessionStorage.vetorRespostas.split(","));
+                }
+            }
+            function calcularPontuacao(vetorRespostas) {
+                var pontos = 0;
+                for (var i=0; i<vetorRespostas.length; i++)
+                    if (vetorRespostas[i] == g_gabarito[i]) pontos++;
+                
+                if (pontos/g_gabarito.length >= 0.6) {
+                    document.getElementById("aproveitamento").innerHTML = "Parabéns, você vai receber um certificado. Seu aproveitamento foi de "+((pontos/g_gabarito.length)*100)+"%";
+                    document.getElementById("formNome").className = "visivel";
+                }
+                else {
+                    document.getElementById("aproveitamento").innerHTML = "Iiii não foi desta vez. Seu aproveitamento foi de "+((pontos/g_gabarito.length)*100)+"%";
+                    document.getElementById("formNome").className = "invisivel";
+                }
+            }
+        </script>
+    </head>
+    <body onload="lerDados()">
+        <p id="aproveitamento"></p>
+        <form id="formNome" class="invisivel">
+            Nome: <input type="text" id="txtNome">
+            <input type="button" value="Emitir certificado">
+        </form>
+    </body>
+</html>
