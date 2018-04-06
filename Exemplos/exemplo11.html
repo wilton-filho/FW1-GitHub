@@ -1,0 +1,22 @@
+<head>
+	<script>
+		function testar() {
+			var x = document.getElementById("btnFile").value;
+			alert(x)
+		}
+		
+		function criarElemento() {
+			var button = document.createElement('button');
+			button.setAttribute('type','button')
+			button.appendChild(document.createTextNode('Seu button'));
+			document.body.appendChild(button);
+		}
+	</script>
+</head>
+
+<body onload="criarElemento()">
+<form >
+	<!-- <input type="file" value="testar" id="btnFile"> -->
+	<input type="button" value="Try it!" onclick="testar()">
+</form>
+</body>

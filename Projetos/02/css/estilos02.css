@@ -90,6 +90,11 @@ article:nth-child(3) img{
 	transition: all 0.1s;
 }
 
+article:nth-child(3) {
+	text-align:center; 
+	background-color:#f8f8f8
+}
+
 article:nth-child(3) img:hover{
 	box-shadow:10px 10px 20px gray;
 	width:350px;
@@ -101,9 +106,13 @@ footer {
 	color:white;
 	font-size:12px;
 }
-.teste {
+
+article:nth-child(2) img {
+	text-align:center; 
+	background-color:#f8f8f8
 	transition: all 1s;
 }
-.teste:hover {
+
+article:nth-child(2) img:hover {
 	content: url('../imagens/webdesign02.jpg');
 }
