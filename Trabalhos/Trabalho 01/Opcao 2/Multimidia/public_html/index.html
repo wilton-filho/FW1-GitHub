@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Converbaton</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            h1 {
+                color:red;
+                text-transform: uppercase;
+                font-size:35px;
+            }
+            h1, h2, h3 {
+                text-align: center;
+            }
+        </style>
+        <script>
+            function gerarNros() {
+                var valorDec = document.getElementById("nroDecimal").value;
+                if (valorDec == ""){
+                    alert("Informe um número maior ou igual a zero na caixa de texto para gerar os números");
+                }
+                else {
+                    var tabela = "<table border='1' align='center' cellpadding='5'>";
+                    tabela += "<tr><td>Decimal</td><td>Binário</td><td>Hexadecimal</td><tr>";
+                    for (var i=0; i<=valorDec; i++) {
+                    tabela += "<tr><td>"+i+"</td><td>"+i.toString(2)+"</td><td>"+(i.toString(16)).toUpperCase()+"</td><tr>";    
+                    }
+                    tabela += "</table>";
+                    document.getElementById("txtNros").innerHTML = tabela;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1> Converbaton </h1>
+        <hr>
+        <h2> Ferramenta online para geração/visualização de números dos sistemas de numeração decimal, binário e hexadecimal </h2>
+        <h3> Desenvolvedor: Wilton de Paula Filho</h3>
+        <form>
+            <br>
+            <p style="color:green; font-weight: bold">Informe no campo abaixo o número no sistema de numeração DECIMAL. Em seguida pressione o botão "Gerar outros números" para visualizar os outros números gerados nas bases binária e hexadecimal (Uma sequência de 0 até o número que você colocou será gerada. </p>
+            <br>
+            <label style="font-weight: bold">Número no sistema de numeração DECIMAL:</label> <input type="number" min="0" id="nroDecimal">
+            <input type="button" value="Gerar outros números" onclick="gerarNros()">
+            <p id="txtNros"></p>
+        </form>
+        
+    </body>
+</html>
