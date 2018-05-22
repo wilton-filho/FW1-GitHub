@@ -1,0 +1,12 @@
+<html>
+ <head> 
+  <title>Prova - João Ferreira Neto </title>
+ </head>
+ <body>
+ <map name="iftm">
+  <area shape="circle" alt="Logo da IFTM - Circulo vermelho com quadrados ao lado" text="Aguarde 10 segundos para ser redirecionado para o site do IFTM." coords="108, 174, 101" href="http://www.iftm.edu.br">
+  <meta http-equiv="refresh" content="20;http://www.iftm.edu.br">
+ </map>
+ <img src="imagens1\logoIFTM.png" usemap="#iftm">
+ </body>
+</html>

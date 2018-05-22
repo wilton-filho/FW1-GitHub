@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+  
+  <style>
+    
+    body {
+      margin: 0px;
+    }
+    
+    a {
+      text-decoration: none;
+      background-color: black;
+      color:white;
+      display: block;
+      padding: 20px 20px 20px 20px;
+      background-repeat: no-repeat;
+      transition: all 1s;
+    }
+    
+    a.instagram {
+      background-image: url(imagens/instagram.png)
+    }
+    
+    a.facebook {
+      background-image: url(imagens/facebook.png)
+    }
+    
+    a.twitter {
+      background-image: url(imagens/twitter.png)
+    }
+    
+    a.googlemaps {
+      background-image: url(imagens/maps.png)
+    }
+    
+    a.youtube {
+      background-image: url(imagens/youtube.png)
+    }
+    
+    ul {
+      margin: 0;
+      list-style: none;
+      padding: 0px;
+      
+      background-color: black;
+    }
+
+    @media screen and (min-width: 565px) {
+      a {
+        background-position: -40px center;
+      }
+      a:hover {
+        padding-left: 55px;
+        background-position: 10px center;
+      }
+      li {
+        display: inline-block;
+      }
+      ul {
+        text-align: right;
+      }
+    }
+
+    @media screen and (max-width: 565px) {
+      a {
+        background-position: 30% center;
+      }
+      ul {
+        text-align: center;
+      }
+      li {
+        display: block;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+ 
+ <ul>
+   <li><a href="#" class="instagram">Instagram</a></li>
+   <li><a href="#" class="facebook">Facebook</a></li>
+   <li><a href="#" class="twitter">Twitter</a></li>
+   <li><a href="#" class="googlemaps">Googlemaps</a></li>
+   <li><a href="#" class="youtube">YouTube</a></li>
+ </ul>
+  
+</body>
+</html>

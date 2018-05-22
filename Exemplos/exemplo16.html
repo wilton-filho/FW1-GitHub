@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    @font-face {
+      font-family: minhaFonte;
+      src: url(Nosifer-Regular.ttf);
+    }
+    
+    body {font-size: 35px}
+    h1 {font-size: 100%}
+    h2 {font-size: 80%}
+    h3 {font-size: 60%}
+    p, li {font-size: 47%}
+    p {font-family: minhaFonte; font-size:40px; text-align: center; color:red; text-shadow: 2px 2px 2px black;transition: all 2s}
+    p:hover {
+      letter-spacing: 3px;
+    }
+  </style>
+  <script>
+    var tam = 35;
+  function alterar(btn) {    
+    if (btn == "+"){ 
+      tam = tam + 5;
+    document.getElementById("teste").style.fontSize=tam+"px"
+    }
+    else {
+      if (tam > 35) {
+      tam = tam - 5;
+    document.getElementById("teste").style.fontSize=tam+"px"
+      }
+    }
+  }
+  </script>
+</head>
+<body id="teste">
+   <form>
+     <input type="button" value="A+" onclick="alterar('+')">
+     <input type="button" value="A-" onclick="alterar('-')">
+   </form>
+ 
+  <p> A aula hoje vai até às 23h</p>
+  
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
