@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0px;
+      box-sizing: border-box;
+    }
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      background-color: DodgerBlue;
+      justify-content: center;
+      align-items: center;
+    }
+    .flex-container > div {
+	  background-color: gray;
+      padding: 20px;
+      color: white;
+      text-align: center;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div style="flex-grow: 1">Opção 1</div>
+    <div style="flex-grow: 1">Opção 2</div>
+    <div style="flex-grow: 4">Opção 3</div>
+    <div style="flex-grow: 8">Opção 4</div>
+  </div>  
+</body>
+</html>
