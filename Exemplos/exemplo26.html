@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0px;
+    }
+    /* Mobile First */
+    [class^="col-"] {
+      float: left;
+      padding: 5px;
+      border: 1px solid red;
+      width:100%;
+    }
+    /* Para tablets */
+    @media only screen and (min-width: 600px) {
+      .col-t-1 {width: 8.33%;}
+      .col-t-2 {width: 16.66%;}
+      .col-t-3 {width: 25%;}
+      .col-t-4 {width: 33.33%;}
+      .col-t-5 {width: 41.66%;}
+      .col-t-6 {width: 50%;}
+      .col-t-7 {width: 58.33%;}
+      .col-t-8 {width: 66.66%;}
+      .col-t-9 {width: 75%;}
+      .col-t-10 {width: 83.33%;}
+      .col-t-11 {width: 91.66%;}
+      .col-t-12 {width: 100%;}
+    }
+    /* Para desktops */
+    @media only screen and (min-width: 900px) {
+      .col-d-1 {width: 8.33%;}
+      .col-d-2 {width: 16.66%;}
+      .col-d-3 {width: 25%;}
+      .col-d-4 {width: 33.33%;}
+      .col-d-5 {width: 41.66%;}
+      .col-d-6 {width: 50%;}
+      .col-d-7 {width: 58.33%;}
+      .col-d-8 {width: 66.66%;}
+      .col-d-9 {width: 75%;}
+      .col-d-10 {width: 83.33%;}
+      .col-d-11 {width: 91.66%;}
+      .col-d-12 {width: 100%;}
+    }
+
+    
+    .linha {
+      content: "";
+      display: block;
+      clear: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="linha">
+    <div class="col-t-6 col-d-2">
+      <p>Coluna 1</p>
+    </div>
+    <div class="col-t-6 col-d-6">
+      <p>Coluna 2</p>
+      <p>Coluna 2</p>
+      <p>Coluna 2</p>
+      <p>Coluna 2</p>
+      <p>Coluna 2</p>
+      <p>Coluna 2</p>
+      <p>Coluna 2</p>
+      <p>Coluna 2</p>
+      <p>Coluna 2</p>
+    </div>
+    <div class="col-t-12 col-d-4">Coluna 3</div>
+  </div>
+</body>
+</html>

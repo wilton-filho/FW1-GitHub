@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0px;
+    }
+    header, footer {
+      color: white;
+      text-align: center;
+      background-color: black;
+    }
+    header h1 {
+      margin:0px;
+    }
+    header ul {
+      list-style: none;
+      padding: 0px;
+      background-color: gray;
+    }
+    header ul li {
+      display: inline;
+    }
+    header ul li a:link, header ul li a:visited {
+      text-decoration: none;
+      color: white;
+    }
+    .caixa {
+      float: left;
+    }
+    .caixaAmarela {
+      background-color: yellow;
+    }
+    .caixaRosa {
+      background-color: pink;
+    }
+    .caixaAzul {
+      background-color: blue;
+    }
+    .caixaLateral {
+      width: 25%;
+    }
+    .caixaCentro {
+      width: 50%;
+    }
+    .clear{
+      clear: both;
+    }
+    section::after {
+      display:block;
+      content: "";
+      clear:both;
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabecalho da pagina -->
+  <!--header>(h1+h2)>nav>ul>(li>a{Opção $})*5-->
+  <header>
+    <h1>Título</h1>
+    <h2>Subtítulo da página</h2>
+    <nav>
+      <ul>
+        <li><a href="">Opção 1</a></li>
+        <li><a href="">Opção 2</a></li>
+        <li><a href="">Opção 3</a></li>
+        <li><a href="">Opção 4</a></li>
+        <li><a href="">Opção 5</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Seção de conteudo da pagina -->
+  <!--section>p{lorem}-->
+  <section>
+    <div class="caixa caixaAmarela caixaLateral">
+      <p>coluna esquerda</p>
+    </div>
+    <div class="caixa caixaRosa caixaCentro">
+      <p>coluna centro</p>
+      <p>coluna centro</p>
+      <p>coluna centro</p>
+      <p>coluna centro</p>
+      <p>coluna centro</p>
+      <p>coluna centro</p>
+      <p>coluna centro</p>
+      <p>coluna centro</p>
+      <p>coluna centro</p>
+      <p>coluna centro</p>
+      <p>coluna centro</p>
+      <p>coluna centro</p>
+    </div>
+    <div class="caixa caixaAzul caixaLateral">
+      <p>coluna direita</p>
+    </div>
+  </section>
+  <!-- Rodape da pagina -->
+  <!--footer>(p>lorem)-->
+  <footer>
+    <p>Rodapé da página</p>
+  </footer>
+</body>
+</html>
