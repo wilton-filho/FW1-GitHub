@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0px;
+    }
+    .caixaExt {
+      background-color: lightblue;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+    }
+    .caixaExt > div {
+      background-color: yellow;
+      padding: 10px;
+      margin: 0px;
+      font-size: 30px;
+      width: 100%;
+      border:1px solid black;
+    }
+    @media only screen and (min-width: 600px){
+      .caixaExt {
+        flex-direction: row;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="caixaExt">
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+    <div>D</div>
+  </div>
+  
+  
+</body>
+</html>

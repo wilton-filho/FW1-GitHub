@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0px;
+    }
+    .caixaExt {
+      background-color: lightblue;
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      height: 100px;
+    }
+    .caixaInt {
+      flex: 33.3%;
+      background-color: yellow;
+      border:1px solid black;
+    }
+    .caixaInt > div {
+      border:1px solid red;
+      overflow: auto;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="caixaExt">
+    <div class="caixaInt">
+      <div>A</div>
+    </div>
+    <div class="caixaInt">
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+    </div>
+    <div class="caixaInt">
+      <div>E</div>
+      <div>F</div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

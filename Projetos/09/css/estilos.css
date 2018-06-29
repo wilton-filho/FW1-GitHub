@@ -1,0 +1,110 @@
+* {
+  font-family: verdana;
+}
+.imagemTopo {
+  height: 300px;
+  width: 100%;
+  background-image: url(../imagens/topo.jpg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagemTopo h1 {
+  color: rgba(255,255,255,1);
+  font-size: 90px;
+  text-shadow: 2px 2px 2px black;
+}
+.linhaDegrade {
+  height: 5px;
+  background: linear-gradient(to right, #182B53 , #F7AD00);
+}
+header {
+  background-color: #FDE84D;
+}
+header > div:nth-child(1) {
+  padding: 15px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+}
+ul li {
+  display: inline-block;
+  margin:0px 20px;
+}
+ul li a:link, ul li a:visited {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #003060;
+}
+ul li a:hover {
+  color: #003060;
+  text-shadow: 1px 1px 1px white;
+}
+.imgBorda {
+  border-radius: 10px;
+}
+.imgFull {
+  width: 100%;
+}
+.tipoServico {
+  background-color: #F7B101;
+  color:white;
+  text-align: center;
+  width: 140px;
+  height: 140px;
+  border-radius: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  transition: all 1s;
+  cursor: pointer;
+}
+.tipoServico:hover {
+  background-color: #003060;
+  transform: rotateZ(360deg);
+}
+section article:nth-child(even) {
+  background-color: #EEEEEE;
+}
+section article:nth-child(odd) {
+  background-color: white;
+}
+article {
+  padding: 30px 50px;
+}
+.centralizar {
+  text-align: center;
+}
+.justificar {
+  text-align: justify;
+}
+footer {
+  text-align: center;
+  background-color: #003060;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+footer p {
+  margin:0px;
+}
+img.sepia:hover {
+  -webkit-filter: sepia(50%);
+  -moz-filter: sepia(50%);
+  -ms-filter: sepia(50%);
+  -o-filter: sepia(50%);
+  filter: sepia(50%);
+  box-shadow: 2px 2px 5px gray;
+}
