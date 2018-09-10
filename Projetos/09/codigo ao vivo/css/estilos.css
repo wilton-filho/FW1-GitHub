@@ -1,0 +1,53 @@
+* {
+  border: 1px solid black;
+}
+header ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+}
+header ul li {
+  display: inline-block;
+}
+header ul li a:link, header ul li a:visited {
+  text-decoration: none;
+}
+.imgCabecalho {
+  background-image: url(../imagens/topo.jpg);
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  color:white;
+  font-size: 75px;
+  text-align: center;
+}
+.boxProduto {
+  background: #F5AD01;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  margin:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+  font-size: 20px;
+  font-weight: bold;
+}
+.boxProduto:hover {
+  transform: rotateZ(360deg);
+  background-color: #030915;
+  color:white;
+}
+
+
+
+
+
+
+
+
